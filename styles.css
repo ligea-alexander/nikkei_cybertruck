@@ -1,0 +1,40 @@
+/* These are the styles for ai2html */
+
+#g-tesla_test-laptop,
+#g-tesla_test-medium,
+#g-tesla_test-mobile {
+    display: none;
+}
+
+@media (max-width: 490px) {
+    #g-tesla_test-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 620px) {
+    #g-tesla_test-laptop {
+        display: block;
+    }
+}
+
+@media (min-width: 620px) {
+    #g-tesla_test-medium {
+        display: block;
+    }
+}
+
+.header {
+    background-color: gray;
+    padding: 1.5rem;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
