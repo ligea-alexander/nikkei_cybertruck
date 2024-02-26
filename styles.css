@@ -25,10 +25,9 @@
 }
 
 .header {
-    background-color: gray;
+    max-width: auto;
     padding: 1.5rem;
     display: flex;
-    box-sizing: border-box;
 }
 
 img {
