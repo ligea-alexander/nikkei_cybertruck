@@ -1,25 +1,25 @@
 /* These are the styles for ai2html */
 
-#g-tesla_test-laptop,
-#g-tesla_test-medium,
-#g-tesla_test-mobile {
+#g-cybertruck-project-laptop,
+#g-cybertruck-project-medium,
+#g-cybertruck-project-mobile {
     display: none;
 }
 
 @media (max-width: 490px) {
-    #g-tesla_test-mobile {
+    #g-cybertruck-project-mobile {
         display: block;
     }
 }
 
 @media (min-width: 490px) and (max-width: 620px) {
-    #g-tesla_test-laptop {
+    #g-cybertruck-project-laptop {
         display: block;
     }
 }
 
 @media (min-width: 620px) {
-    #g-tesla_test-medium {
+    #g-cybertruck-project-medium {
         display: block;
     }
 }
@@ -35,7 +35,7 @@ img {
     max-height: 100%;
 }
 
-.container {
+#container1 {
     max-width: 40rem;
     margin: 0 auto;
     display: flex;
