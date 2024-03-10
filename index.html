@@ -3651,13 +3651,10 @@
             <p>Which is fastest to reach 60mph?</p>
         </div>
     </section>
-
-
     <!-- D3 script here -->
     <script>
 
         function hideNote() {
-            // annotation: #path-1, #text-1, #path-2, #text-2
             d3.select("#cbt_start").classed('hidden', true);
             d3.select("#cheetah_x5F_start").classed('hidden', true);
             d3.select("#cbt_middle").classed('hidden', true);
@@ -3691,19 +3688,18 @@
         });
 
         d3.select("#step-two").on('stepin', function (e) {
-
             // undo changes from step one
-            hideNote();
-
+            // hideNote();
             // do changes for step two
             console.log("Got to step two");
             d3.select("#cbt_middle").classed('hidden', false);
             d3.select("#cheetah_x5F_middle").classed('hidden', false);
-            // d3.selectAll("[data-name='africa'] path").style('stroke', 'black');
+
         });
 
         d3.select("#step-three").on('stepin', function (e) {
             // undo changes from step two
+            console.log("Got to step three");
             d3.select("#cbt_end").classed('hidden', false);
             d3.select("#cheetah_x5F_end").classed('hidden', false);
             // d3.selectAll("[data-name='africa'] path").style('stroke', 'none');
