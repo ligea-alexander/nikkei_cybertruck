@@ -3652,7 +3652,6 @@
     </section>
     <!-- D3 script here -->
     <script>
-
         function hideNote() {
             d3.select("#cbt_start").classed('hidden', true);
             d3.select("#cheetah_x5F_start").classed('hidden', true);
@@ -3677,7 +3676,6 @@
             // undo changes from step two
             d3.select("#cbt_start").classed('hidden', false);
             d3.select("#cheetah_x5F_start").classed('hidden', false);
-            // d3.selectAll("[data-name='africa'] path").style('stroke', 'none');
 
             // do changes for step one
             d3.select("#cbt_middle").classed('hidden', true);
@@ -3701,7 +3699,6 @@
             console.log("Got to step three");
             d3.select("#cbt_end").classed('hidden', false);
             d3.select("#cheetah_x5F_end").classed('hidden', false);
-            // d3.selectAll("[data-name='africa'] path").style('stroke', 'none');
         });
         d3.select("#step-four").on('stepin', function (e) {
             // undo changes from step two
@@ -3717,7 +3714,7 @@
         scroller
             .setup({
                 step: "#scrolly .scrolly-overlay .step",
-                offset: 0.8,
+                offset: 0.9,
                 debug: false
             })
             .onStepEnter(function ({ element, index, direction }) {
